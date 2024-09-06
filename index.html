@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Climate change is deepening gender inequality and leaving women behind</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/RI_Favicon_1-300x300.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Through gendered disparities in migration and refugee systems, climate change is disproportionately impacting women and girls.">
+    
+    <link rel="image_src" href="assets/IMG_2401.jpg">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Climate change is deepening gender inequality and leaving women behind">
+    <meta property="og:image" content="assets/IMG_2401.jpg">
+    <meta property="og:description" content="Through gendered disparities in migration and refugee systems, climate change is disproportionately impacting women and girls.">
+    
+    <meta name="twitter:title" content="Climate change is deepening gender inequality and leaving women behind">
+    <meta name="twitter:description" content="Through gendered disparities in migration and refugee systems, climate change is disproportionately impacting women and girls.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="assets/IMG_2401.jpg">
+
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"WebSite","name":"Climate change is deepening gender inequality and leaving women behind","url":"...url..."}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="js/Control.GlobeMiniMap.min.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="media-container d-mobile-none">
+        <div class="slide" id="slide-1">
+            <video class="full-video" muted playsinline autoplay>
+                <source src="assets/15665966-hd_1920_1080_60fps.mp4" type="video/mp4"></source>
+            </video>
+        </div>
+        <div class="slide" id="slide-2">
+            <video class="full-video" loop muted playsinline autoplay>
+                <source src="assets/5090934-hd_1920_1080_30fps.mp4" type="video/mp4"></source>
+            </video>
+        </div>
+        <div class="slide" id="slide-3" style="background-image: url('assets/pexels-tkirkgoz-16794019.jpg')"></div>
+        <div class="slide" id="slide-4" style="background-color: transparent"></div>
+    </div>
+
+    <div class="scroll-container">
+        <div class="section text" id="section-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 pt-5 p-sm-5 main">
+                        <div class="mb-4 logo">
+                        <span>
+                            <svg viewBox="0 0 252 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#121c42" d="M0 110.248h249.397v7.746H0zm0-62.201h8.413V27.499h1.991c.55 0 .996.057 1.34.17.365.091.652.273.858.546.229.25.389.59.48 1.022.115.432.206 1 .275 1.704l.275 12.267c0 .568.011 1.068.034 1.5.046.43.08.84.103 1.226.046.363.092.715.137 1.056.07.341.138.693.206 1.056h8.516c-.092-.34-.172-.67-.24-.988-.046-.34-.103-.738-.172-1.192a55.035 55.035 0 0 1-.137-1.67c-.046-.659-.104-1.5-.172-2.522l-.172-9.881c-.069-1.363-.194-2.5-.377-3.408-.184-.909-.447-1.658-.79-2.249-.344-.59-.767-1.056-1.27-1.397-.481-.34-1.077-.614-1.786-.818a8.849 8.849 0 0 0 1.888-1.022 5.957 5.957 0 0 0 1.511-1.602c.412-.659.733-1.442.961-2.351.252-.909.378-1.976.378-3.203V8.962c0-1.136-.114-2.136-.343-2.999-.229-.886-.561-1.658-.996-2.317a5.868 5.868 0 0 0-1.648-1.704 9.4 9.4 0 0 0-2.3-1.124c-.87-.296-1.855-.5-2.954-.614A29.4 29.4 0 0 0 10.404 0H0v48.047Zm8.413-27.193V6.815H10.3c.641 0 1.168.057 1.58.17.434.091.778.262 1.03.512.274.227.457.545.549.954.114.386.172.863.172 1.43v7.804c0 .568-.057 1.057-.172 1.466a1.824 1.824 0 0 1-.55.954c-.251.25-.595.443-1.03.579-.412.113-.927.17-1.545.17H8.413Zm27.366 28.01c1.763 0 3.285-.204 4.567-.613 1.305-.409 2.369-1 3.193-1.772a7.031 7.031 0 0 0 1.854-2.896c.412-1.159.618-2.477.618-3.953v-4.805h-8v5.248c0 .454-.046.863-.138 1.227-.091.34-.228.636-.412.886a1.87 1.87 0 0 1-.686.579c-.252.113-.573.17-.962.17a3.3 3.3 0 0 1-.858-.102 2.516 2.516 0 0 1-.652-.34 1.872 1.872 0 0 1-.447-.58 4.145 4.145 0 0 1-.275-.852 11.025 11.025 0 0 1-.171-1.09 27.189 27.189 0 0 1-.035-1.431V21.637c0-.704.035-1.318.103-1.84.092-.523.218-.954.378-1.295.183-.34.435-.59.755-.75.321-.181.71-.272 1.168-.272.275 0 .515.034.721.102.206.045.39.125.55.239.183.113.331.272.446.477.137.204.24.454.309.75.069.272.126.601.172.987.045.387.068.818.068 1.295v5.725h-5.837v5.18h13.975v-7.974c0-1.5-.08-2.84-.24-4.021-.138-1.204-.367-2.272-.687-3.203-.32-.932-.744-1.738-1.27-2.42a6.306 6.306 0 0 0-1.958-1.67c-.755-.43-1.648-.749-2.678-.953-1.03-.228-2.209-.341-3.537-.341-1.946 0-3.605.216-4.979.647-1.35.432-2.46 1.102-3.33 2.01-.87.91-1.5 2.068-1.889 3.476-.389 1.386-.583 3.056-.583 5.01v14.925c0 1.294.08 2.476.24 3.544.16 1.044.412 1.987.755 2.828a8.23 8.23 0 0 0 1.374 2.146 7.17 7.17 0 0 0 2.06 1.466c.801.386 1.717.67 2.747.852 1.053.204 2.243.306 3.57.306Zm14.919-.817h8.172V18.639h3.675v-6.1H58.87V8.52c0-.5.035-.897.103-1.193.07-.318.184-.568.344-.75.183-.181.435-.306.755-.374a6.887 6.887 0 0 1 1.305-.102h1.167V0h-2.987c-1.625 0-3.01.125-4.155.375-1.121.25-2.037.681-2.746 1.295-.687.613-1.19 1.42-1.511 2.42-.298.976-.447 2.203-.447 3.68v4.77h-2.85v6.1h2.85v29.407Zm20.736.647a7.11 7.11 0 0 0 2.026-.273 6.64 6.64 0 0 0 1.682-.647 5.203 5.203 0 0 0 1.27-1.022c.367-.387.665-.795.893-1.227v2.522h8.138V12.54h-8.138v26.613c0 .59-.045 1.102-.137 1.533-.069.432-.194.784-.378 1.057-.16.272-.377.477-.652.613-.252.113-.56.17-.927.17-.39 0-.721-.057-.996-.17a1.596 1.596 0 0 1-.618-.613c-.16-.273-.286-.625-.377-1.057a9.897 9.897 0 0 1-.104-1.533V12.54h-8.172v27.77c0 1.477.126 2.75.378 3.817.275 1.045.675 1.908 1.202 2.59a4.874 4.874 0 0 0 2.026 1.499c.824.318 1.785.477 2.884.477Zm24.759-3.408a7.27 7.27 0 0 0 2.06-.272 6.68 6.68 0 0 0 1.683-.716 5.451 5.451 0 0 0 1.236-1.022 5.08 5.08 0 0 0 .859-1.295v8.45c0 .455-.023.853-.069 1.194-.046.363-.114.67-.206.92-.069.272-.16.5-.275.681a1.094 1.094 0 0 1-.446.409c-.16.114-.355.193-.584.239a2.298 2.298 0 0 1-.72.102c-.367 0-.688-.046-.962-.137a1.56 1.56 0 0 1-.687-.443 1.972 1.972 0 0 1-.412-.783 5.586 5.586 0 0 1-.103-1.159V46.99h-8.035v3.885c0 1.545.195 2.862.584 3.953.389 1.113.984 2.021 1.785 2.726.824.727 1.877 1.25 3.16 1.567 1.281.34 2.803.511 4.566.511 1.19 0 2.266-.08 3.228-.238.984-.16 1.865-.42 2.644-.784a6.496 6.496 0 0 0 2.06-1.363c.572-.568 1.053-1.26 1.442-2.079.412-.818.71-1.772.893-2.862.183-1.09.275-2.34.275-3.748V12.54h-8.138v2.59a4.555 4.555 0 0 0-.859-1.261 5.039 5.039 0 0 0-1.236-1.057 5.917 5.917 0 0 0-1.682-.681 7.291 7.291 0 0 0-2.06-.273c-1.122 0-2.14.17-3.056.511a5.472 5.472 0 0 0-2.335 1.67c-.641.75-1.134 1.75-1.477 2.999-.343 1.25-.515 2.794-.515 4.634v13.8c0 1.205.069 2.284.206 3.238.16.954.39 1.794.687 2.521a7.12 7.12 0 0 0 1.099 1.875c.434.5.927.92 1.476 1.26.55.318 1.145.557 1.786.716.663.136 1.373.204 2.128.204Zm3.572-6.065c-.275 0-.527-.034-.756-.102a1.963 1.963 0 0 1-.618-.307 2.208 2.208 0 0 1-.446-.545 4.152 4.152 0 0 1-.275-.852 12.59 12.59 0 0 1-.172-1.159 15.841 15.841 0 0 1-.068-1.567V22.422c0-.568.022-1.068.068-1.5.046-.454.103-.852.172-1.192.069-.341.16-.625.275-.852.137-.227.286-.409.446-.545a1.31 1.31 0 0 1 .584-.307 2.77 2.77 0 0 1 .79-.102c.274 0 .526.034.755.102.229.068.435.182.618.34.183.137.332.33.446.58.115.227.206.511.275.852.092.318.16.693.206 1.124.046.41.069.875.069 1.398v12.437c0 .545-.023 1.034-.069 1.465a7.536 7.536 0 0 1-.206 1.159c-.069.318-.16.59-.275.818a1.87 1.87 0 0 1-.446.579c-.183.136-.389.25-.618.34a2.64 2.64 0 0 1-.755.103Zm24.404 9.643c1.763 0 3.285-.204 4.567-.613 1.305-.409 2.369-1 3.193-1.772a7.031 7.031 0 0 0 1.855-2.896c.412-1.159.618-2.477.618-3.953v-4.805h-8.001v5.248c0 .454-.046.863-.137 1.227-.092.34-.229.636-.412.886a1.87 1.87 0 0 1-.687.579c-.252.113-.572.17-.961.17-.321 0-.607-.034-.859-.102a2.508 2.508 0 0 1-.652-.34 1.886 1.886 0 0 1-.447-.58 4.133 4.133 0 0 1-.274-.852 10.99 10.99 0 0 1-.172-1.09 27.101 27.101 0 0 1-.034-1.431V21.637c0-.704.034-1.318.103-1.84.091-.523.217-.954.377-1.295.184-.34.435-.59.756-.75.32-.181.71-.272 1.167-.272.275 0 .515.034.721.102.206.045.39.125.55.239.183.113.332.272.446.477.138.204.241.454.309.75.069.272.126.601.172.987.046.387.069.818.069 1.295v5.725h-5.838v5.18h13.975v-7.974c0-1.5-.08-2.84-.24-4.021-.137-1.204-.366-2.272-.687-3.203-.32-.932-.744-1.738-1.27-2.42a6.314 6.314 0 0 0-1.957-1.67c-.756-.43-1.649-.749-2.679-.953-1.03-.228-2.209-.341-3.536-.341-1.946 0-3.606.216-4.979.647-1.351.432-2.461 1.102-3.331 2.01-.87.91-1.499 2.068-1.888 3.476-.389 1.386-.584 3.056-.584 5.01v14.925c0 1.294.08 2.476.24 3.544.161 1.044.412 1.987.756 2.828a8.234 8.234 0 0 0 1.373 2.146 7.169 7.169 0 0 0 2.06 1.466c.802.386 1.717.67 2.747.852 1.053.204 2.244.306 3.571.306Zm23.808 0c1.763 0 3.285-.204 4.567-.613 1.305-.409 2.369-1 3.193-1.772a7.03 7.03 0 0 0 1.854-2.896c.412-1.159.618-2.477.618-3.953v-4.805h-8v5.248c0 .454-.046.863-.137 1.227-.092.34-.229.636-.412.886-.184.25-.412.443-.687.579-.252.113-.572.17-.962.17a3.3 3.3 0 0 1-.858-.102 2.508 2.508 0 0 1-.652-.34 1.871 1.871 0 0 1-.447-.58 4.133 4.133 0 0 1-.274-.852 10.99 10.99 0 0 1-.172-1.09 27.101 27.101 0 0 1-.034-1.431V21.637c0-.704.034-1.318.103-1.84.091-.523.217-.954.377-1.295.183-.34.435-.59.756-.75.32-.181.709-.272 1.167-.272.275 0 .515.034.721.102.206.045.389.125.55.239.183.113.331.272.446.477.137.204.24.454.309.75.069.272.126.601.172.987.045.387.068.818.068 1.295v5.725h-5.837v5.18h13.975v-7.974c0-1.5-.08-2.84-.24-4.021-.138-1.204-.366-2.272-.687-3.203-.32-.932-.744-1.738-1.27-2.42a6.307 6.307 0 0 0-1.958-1.67c-.755-.43-1.648-.749-2.678-.953-1.03-.228-2.209-.341-3.537-.341-1.945 0-3.605.216-4.978.647-1.351.432-2.461 1.102-3.331 2.01-.87.91-1.499 2.068-1.889 3.476-.389 1.386-.583 3.056-.583 5.01v14.925c0 1.294.08 2.476.24 3.544.16 1.044.412 1.987.755 2.828a8.262 8.262 0 0 0 1.374 2.146 7.169 7.169 0 0 0 2.06 1.466c.801.386 1.717.67 2.747.852 1.053.204 2.243.306 3.571.306Zm23.018 0c1.122 0 2.14-.08 3.056-.238a11.507 11.507 0 0 0 2.541-.648 7.098 7.098 0 0 0 1.957-1.124 6.408 6.408 0 0 0 1.374-1.568 6.756 6.756 0 0 0 .858-2.078 9.764 9.764 0 0 0 .309-2.522v-2.93c0-1.34-.126-2.476-.378-3.408-.229-.954-.583-1.783-1.064-2.487a7.609 7.609 0 0 0-1.854-1.875c-.733-.545-1.626-1.079-2.679-1.601l-3.571-2.01a12.627 12.627 0 0 1-1.304-.887 3.969 3.969 0 0 1-.824-.954 3.522 3.522 0 0 1-.412-1.226 11.376 11.376 0 0 1-.103-1.67V19.15c0-.34.034-.636.103-.885a1.96 1.96 0 0 1 .343-.614c.16-.182.355-.306.584-.375.229-.09.492-.136.789-.136.229 0 .424.023.584.068.183.023.343.08.481.17a.99.99 0 0 1 .412.341c.114.137.206.307.275.511.068.205.114.455.137.75.046.273.069.602.069.988v4.805h7.863V20.41c0-1.59-.206-2.942-.618-4.055-.39-1.113-.985-2.01-1.786-2.692-.801-.704-1.82-1.215-3.056-1.533-1.236-.318-2.69-.477-4.361-.477-1.602 0-3.021.17-4.257.511-1.214.34-2.232.84-3.056 1.5a5.898 5.898 0 0 0-1.855 2.419c-.412.977-.618 2.101-.618 3.373v2.726c0 1.318.103 2.454.309 3.408.229.954.573 1.794 1.031 2.521a7.535 7.535 0 0 0 1.785 1.943c.755.568 1.66 1.113 2.713 1.635l3.674 2.079c.503.318.927.613 1.27.886.343.273.607.59.79.954.206.363.355.784.446 1.26.092.478.138 1.091.138 1.84v2.556c0 .228-.023.444-.069.648a3.34 3.34 0 0 1-.172.511 1.78 1.78 0 0 1-.274.443 1.31 1.31 0 0 1-.412.273 3.426 3.426 0 0 1-.516.17 2.407 2.407 0 0 1-.583.068c-.389 0-.733-.057-1.03-.17a1.563 1.563 0 0 1-.721-.545 3.085 3.085 0 0 1-.447-.954 6.643 6.643 0 0 1-.137-1.432v-4.975h-7.932v4.464c0 1.613.206 2.999.618 4.157.412 1.159 1.03 2.102 1.854 2.829.847.727 1.912 1.26 3.194 1.601 1.282.341 2.792.511 4.532.511ZM0 102.595h8.413V54.548H0v48.047Zm12.2 0h8.173V75.948c0-.59.034-1.09.103-1.5.092-.431.218-.783.378-1.056.183-.272.4-.477.652-.613s.572-.205.962-.205c.366 0 .675.069.927.205.274.136.492.34.652.613.183.273.31.625.378 1.056.091.41.137.91.137 1.5v26.647h8.172V74.823c0-1.499-.137-2.771-.412-3.816-.275-1.068-.687-1.942-1.236-2.624a4.633 4.633 0 0 0-1.991-1.5c-.802-.317-1.752-.476-2.85-.476a7.27 7.27 0 0 0-2.06.272 7.48 7.48 0 0 0-1.683.716 5.43 5.43 0 0 0-2.129 2.18v-2.487h-8.172v35.507Zm33.69 0h3.81v-6.1h-1.167c-.572 0-1.03-.034-1.373-.102-.32-.068-.572-.182-.755-.34-.184-.182-.298-.432-.344-.75a9.992 9.992 0 0 1-.069-1.295v-20.82h3.709v-6.1h-3.709V57.24H37.82v9.848h-2.85v6.1h2.85v22.047c0 1.476.115 2.692.344 3.646.229.954.64 1.703 1.236 2.249.618.545 1.442.931 2.472 1.158 1.053.205 2.392.307 4.017.307Zm16.715.818c1.762 0 3.284-.205 4.566-.614 1.305-.409 2.37-.999 3.194-1.772a7.03 7.03 0 0 0 1.854-2.896c.412-1.159.618-2.476.618-3.953v-4.804h-8v5.247c0 .455-.046.864-.138 1.227-.091.34-.229.636-.412.886-.183.25-.412.443-.687.58-.252.113-.572.17-.961.17a3.29 3.29 0 0 1-.858-.103 2.513 2.513 0 0 1-.653-.34 1.874 1.874 0 0 1-.446-.58 4.144 4.144 0 0 1-.275-.852 11.018 11.018 0 0 1-.172-1.09 27.193 27.193 0 0 1-.034-1.431V76.186c0-.704.034-1.317.103-1.84.092-.522.218-.954.378-1.295.183-.34.435-.59.755-.75.32-.181.71-.272 1.168-.272.274 0 .515.034.72.102.207.046.39.125.55.239.183.114.332.272.446.477.138.204.24.454.31.75.068.272.125.602.171.988.046.386.069.818.069 1.295v5.724h-5.837v5.18h13.975V78.81c0-1.5-.08-2.84-.24-4.02-.138-1.205-.367-2.273-.688-3.204-.32-.931-.743-1.738-1.27-2.42a6.307 6.307 0 0 0-1.957-1.669c-.756-.431-1.648-.75-2.678-.954-1.03-.227-2.21-.34-3.537-.34-1.946 0-3.606.215-4.979.647-1.35.431-2.46 1.101-3.33 2.01-.87.909-1.5 2.067-1.89 3.476-.388 1.386-.583 3.055-.583 5.009V92.27c0 1.295.08 2.476.24 3.544.16 1.045.413 1.988.756 2.828a8.228 8.228 0 0 0 1.373 2.147 7.16 7.16 0 0 0 2.06 1.465c.802.386 1.717.67 2.747.852 1.053.204 2.244.307 3.572.307Zm13.575-.818h8.172V79.424c0-.932.092-1.693.275-2.284.206-.59.503-1.067.892-1.43.413-.387.928-.648 1.546-.784.64-.16 1.396-.239 2.266-.239h1.03v-7.906h-.446c-.756 0-1.443.137-2.06.41a5.233 5.233 0 0 0-1.649 1.056 6.57 6.57 0 0 0-1.236 1.5 6.677 6.677 0 0 0-.755 1.771v-4.43H76.18v35.507Zm16.699 0h8.172V75.948c0-.59.034-1.09.103-1.5.092-.431.218-.783.378-1.056.183-.272.4-.477.652-.613s.572-.205.962-.205c.366 0 .675.069.927.205.274.136.492.34.652.613.183.273.309.625.378 1.056.091.41.137.91.137 1.5v26.647h8.172V74.823c0-1.499-.137-2.771-.412-3.816-.274-1.068-.687-1.942-1.236-2.624a4.63 4.63 0 0 0-1.991-1.5c-.802-.317-1.752-.476-2.85-.476a7.29 7.29 0 0 0-2.061.272 7.485 7.485 0 0 0-1.682.716 5.443 5.443 0 0 0-1.271.988 5.463 5.463 0 0 0-.858 1.193v-2.488h-8.172v35.507Zm30.288.681c.847 0 1.591-.079 2.231-.238.664-.159 1.237-.375 1.717-.648a5.87 5.87 0 0 0 1.305-1.022c.366-.386.675-.818.927-1.295v.682c0 .204.012.409.035.613.022.205.034.409.034.614l.069.613h8a42.168 42.168 0 0 1-.172-1.602l-.068-1.67a48.235 48.235 0 0 1-.035-1.873V74.413c0-1.544-.183-2.84-.549-3.884-.343-1.045-.916-1.886-1.717-2.522-.801-.659-1.831-1.124-3.09-1.397-1.259-.295-2.793-.443-4.601-.443-1.717 0-3.205.17-4.464.511-1.259.341-2.312.864-3.159 1.568a6.16 6.16 0 0 0-1.889 2.59c-.412 1.044-.618 2.26-.618 3.646v3.782h7.829V74.55c0-.523.057-.954.172-1.295.114-.34.263-.614.446-.818.206-.227.447-.386.721-.477.275-.09.584-.136.927-.136.321 0 .607.034.859.102.252.068.458.182.618.34.183.16.32.364.412.614.091.25.137.557.137.92v3.203c0 .34-.046.625-.137.852-.069.227-.263.454-.584.682-.297.204-.755.443-1.373.715-.595.273-1.431.625-2.507 1.056a122.5 122.5 0 0 0-2.644 1.16 18.45 18.45 0 0 0-2.129 1.055 9.3 9.3 0 0 0-1.579 1.125 6.272 6.272 0 0 0-1.099 1.363 5.819 5.819 0 0 0-.618 1.602 8.93 8.93 0 0 0-.206 2.01v7.19c0 1.295.137 2.42.412 3.373.298.932.732 1.704 1.305 2.317.572.591 1.282 1.034 2.129 1.329.847.296 1.831.443 2.953.443Zm3.571-5.724c-.298 0-.573-.046-.824-.137a1.84 1.84 0 0 1-.619-.409 2.305 2.305 0 0 1-.377-.75c-.092-.317-.138-.703-.138-1.158v-6.917c0-.318.012-.602.035-.852.023-.25.068-.477.137-.681a3.16 3.16 0 0 1 .309-.546 3 3 0 0 1 .447-.477c.183-.136.377-.272.583-.409a8.3 8.3 0 0 1 .79-.408c.252-.16.481-.285.687-.375.206-.091.4-.182.583-.273.184-.09.344-.17.481-.239.138-.068.275-.147.412-.238v10.802c0 .295-.023.59-.068.886a3.643 3.643 0 0 1-.206.75 1.933 1.933 0 0 1-.31.613c-.137.182-.297.33-.48.443a2.441 2.441 0 0 1-.653.272 2.769 2.769 0 0 1-.789.103Zm23.57 5.043h3.812v-6.1h-1.168c-.572 0-1.03-.034-1.373-.102-.321-.068-.573-.182-.756-.34-.183-.182-.297-.432-.343-.75a9.98 9.98 0 0 1-.069-1.295v-20.82h3.709v-6.1h-3.709V57.24h-8.172v9.848h-2.85v6.1h2.85v22.047c0 1.476.115 2.692.343 3.646.229.954.641 1.703 1.237 2.249.618.545 1.442.931 2.472 1.158 1.053.205 2.392.307 4.017.307Zm6.751 0h8.172V67.088h-8.172v35.507Zm22.17.818c1.969 0 3.628-.216 4.979-.648 1.373-.431 2.483-1.101 3.33-2.01.87-.932 1.488-2.09 1.855-3.476.389-1.408.583-3.078.583-5.009V77.379c0-1.931-.194-3.59-.583-4.975-.367-1.408-.985-2.567-1.855-3.476-.847-.931-1.957-1.613-3.33-2.044-1.351-.455-3.01-.682-4.979-.682-1.969 0-3.64.227-5.013.682-1.351.431-2.461 1.113-3.331 2.044-.847.909-1.465 2.068-1.854 3.476-.366 1.386-.549 3.044-.549 4.975V92.27c0 1.931.183 3.6.549 5.01.389 1.385 1.007 2.543 1.854 3.475.87.909 1.98 1.579 3.331 2.01 1.373.432 3.044.648 5.013.648Zm0-6.032c-.481 0-.87-.09-1.168-.272-.297-.182-.537-.455-.721-.818-.16-.364-.274-.83-.343-1.397a25.839 25.839 0 0 1-.069-2.045V76.8c0-.794.023-1.476.069-2.044.069-.568.183-1.033.343-1.397.184-.386.424-.659.721-.818.298-.181.687-.272 1.168-.272.481 0 .858.09 1.133.272.298.16.527.432.687.818.183.364.297.83.343 1.397.069.568.103 1.25.103 2.045v16.05c0 .794-.034 1.476-.103 2.044-.046.568-.16 1.033-.343 1.397-.16.363-.389.636-.687.818-.275.181-.652.272-1.133.272Zm13.978 5.214h8.172V75.948c0-.59.034-1.09.103-1.5.091-.431.217-.783.378-1.056.183-.272.4-.477.652-.613s.572-.205.961-.205c.367 0 .676.069.927.205.275.136.493.34.653.613.183.273.309.625.378 1.056.091.41.137.91.137 1.5v26.647h8.172V74.823c0-1.499-.137-2.771-.412-3.816-.275-1.068-.687-1.942-1.236-2.624a4.632 4.632 0 0 0-1.992-1.5c-.801-.317-1.751-.476-2.85-.476a7.28 7.28 0 0 0-2.06.272 7.466 7.466 0 0 0-1.682.716 5.443 5.443 0 0 0-1.271.988 5.463 5.463 0 0 0-.858 1.193v-2.488h-8.172v35.507Zm30.287.681c.847 0 1.591-.079 2.232-.238.664-.159 1.236-.375 1.717-.648a5.87 5.87 0 0 0 1.305-1.022c.366-.386.675-.818.927-1.295v.682c0 .204.011.409.034.613.023.205.035.409.035.614l.068.613h8.001a42.168 42.168 0 0 1-.172-1.602 481.71 481.71 0 0 1-.068-1.67 48.235 48.235 0 0 1-.035-1.873V74.413c0-1.544-.183-2.84-.549-3.884-.344-1.045-.916-1.886-1.717-2.522-.801-.659-1.831-1.124-3.09-1.397-1.259-.295-2.793-.443-4.602-.443-1.716 0-3.204.17-4.463.511-1.259.341-2.312.864-3.159 1.568a6.16 6.16 0 0 0-1.889 2.59c-.412 1.044-.618 2.26-.618 3.646v3.782h7.829V74.55c0-.523.057-.954.172-1.295.114-.34.263-.614.446-.818a1.67 1.67 0 0 1 .721-.477c.275-.09.584-.136.927-.136.321 0 .607.034.859.102.251.068.457.182.618.34.183.16.32.364.412.614.091.25.137.557.137.92v3.203c0 .34-.046.625-.137.852-.069.227-.264.454-.584.682-.298.204-.755.443-1.374.715-.595.273-1.43.625-2.506 1.056-.962.41-1.843.796-2.644 1.16a18.45 18.45 0 0 0-2.129 1.055 9.26 9.26 0 0 0-1.579 1.125 6.243 6.243 0 0 0-1.099 1.363 5.819 5.819 0 0 0-.618 1.602 8.873 8.873 0 0 0-.206 2.01v7.19c0 1.295.137 2.42.412 3.373.297.932.732 1.704 1.305 2.317.572.591 1.281 1.034 2.128 1.329.847.296 1.832.443 2.953.443Zm3.571-5.724a2.41 2.41 0 0 1-.824-.137 1.826 1.826 0 0 1-.618-.409 2.305 2.305 0 0 1-.377-.75c-.092-.317-.138-.703-.138-1.158v-6.917c0-.318.012-.602.035-.852.022-.25.068-.477.137-.681.091-.205.195-.387.309-.546.137-.181.286-.34.446-.477.183-.136.378-.272.584-.409a8.3 8.3 0 0 1 .79-.408c.252-.16.481-.285.687-.375.206-.091.4-.182.583-.273l.481-.239c.137-.068.275-.147.412-.238v10.802c0 .295-.023.59-.069.886a3.521 3.521 0 0 1-.206.75 1.91 1.91 0 0 1-.309.613c-.137.182-.297.33-.48.443a2.455 2.455 0 0 1-.653.272 2.771 2.771 0 0 1-.79.103Zm14.16 5.043h8.172V54.548h-8.172v48.047Z"></path><rect x="156.589" y="57.448" width="9.07" height="8.133" rx="4.067" fill="#121c42"></rect></svg></span>
+                        </div>
+                        <div class="mb-4 logo">
+                            <img class="img-fluid" src="assets/iscm_logo.png">
+                        </div>
+                        <h1>Climate change is deepening gender inequality and leaving women behind</h1>
+                        <h4>Through gendered disparities in who migrates and who refugee systems serve, climate change is impacting women and girls more.</h4>
+                        <small class="byline text-body-tertiary">
+                            Published September 2024 in collaboration between <a href="https://www.refugeesinternational.org/">Refugees International</a> and the <a href="https://earthrefuge.org/international-school-on-climate-mobilities/" target="_blank">International School on Climate Mobilities</a>.
+                            <a class="a2a_dd byline" href="https://www.addtoany.com/share">Share this article</a>
+                        </small>
+                        
+                        <div class="mt-2 mb-4">
+                            <div style="height: 0.3em; width: 70%; background-color: #d1eef9; float: left;"></div>
+                            <div style="height: 0.3em; width: 20%; background-color: #ff633e; float: left;"></div>
+                            <div style="height: 0.3em; width: 10%; background-color: #00e796; float: left;"></div>
+                            <div style="clear: both;"></div>
+                        </div>
+
+
+                        <p class="leading-cap">More and more people must act as extreme weather and disasters driven by climate change become the norm around the world. However, climate change disproportionately affects women and girls in particular. Globally, <a href="https://data.unwomen.org/publications/data-driven-insights-effects-climate-change-gender-and-development">almost 160 million women and girls</a> globally may face poverty as a result of climate change by 2050 in a worst-case climate path scenario. Food insecurity driven by climate change is also projected to increase. In this scenario, close to 240 million more women and girls may face hunger, compared to 131 million more men and boys.</p>
+                        <p>In many parts of the world, gender inequality means women and girls spend more time doing unpaid work. This can often be providing food, water, and fuel for their families. According to the United Nations Environment Programme, "<a href="https://wedocs.unep.org/20.500.11822/7985">women are an estimated 43% of the workforce in agriculture</a>. In Asia and Africa, this proportion is higher, often  above 50%, especially in mountain regions." Thus, women have an important role in adapting to climate change and its impacts.</p>
+                        <p>These gendered labor patterns make women's livelihoods sensitive to crop failures, drought, and resource scarcities worsened by climate change. Flooding, droughts, landslides, and heatwaves are some of the most common climate-related disasters. These disasters also push women and girls out of school and livelihoods and into refugee status. As refugees, they face <a href="https://doi.org/10.1016/j.rhm.2016.05.003">increased risk</a> of poor sexual and reproductive health and gender-based violence.</p>
+                        <p>Gender inequalities render women particularly vulnerable to climate hazards and disasters. According to the <a href="https://www.unfpa.org/press/global-climate-crisis-putting-women-and-girls-extreme-danger-unfpa-warns-new-data">United Nations Population Fund (UNFPA)</a>, disparities in access to resources limit women's ability to cope with disasters. These include economic opportunities, financial and legal resources, education, and reproductive rights protections. Even outside of disasters, expectations of women mean they bear more family obligations and hold less power in decision-making about relocating to safer places.</p>
+                        <p>We explored these intersections between gender, climate hazards and displacement through a series of case studies and interviews with individuals' lived experiences in Uganda, Nepal, Kenya, Sudan, and India. To protect interviewees' identities, we have attributed pseudonyms to them.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <video class="full-video d-mobile" loop muted playsinline autoplay>
+                            <source src="assets/15665966-hd_1920_1080_60fps.mp4" type="video/mp4"></source>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section text" id="section-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 p-sm-5 main">
+                        <h2>Women and men experience different extreme weather impacts during displacement</h2>
+                        <h3>Perspectives from refugee settlements in Uganda</h3>
+                        <p>The impacts of climate change often drive population movement. Climate-related disasters sweep away homes, disrupt livelihoods, and dismantle community networks. These impacts can combine with other circumstances and force people to migrate. While precariously displaced, women and girls face an increased risk of sexual and gender-based violence and trafficking. These risks can occur both en route or in the place where they seek protection. 
+                        </p>
+                        <p>"Men don't fetch firewood, don't cook, do nothing concerning kitchen or water, thus putting women at the forefront of all the risks that come in these areas," said Mina,<small>*</small> a community leader from South Sudan living in a refugee settlement in Uganda. Mina fled to Uganda after civil war broke out in South Sudan, which also took her husband's life. After almost a decade of living in refugee settlements and being a community leader, she has seen many women and girls suffering from sexual and gender-based violence, both inside and outside of refugee camps. This makes women vulnerable to sexually transmitted diseases like HIV/AIDS and fistula caused by violent rape.
+                        </p>
+                        <p>These traumas can intersect with and directly stem from the refugee system. "Most women and girls didn't want to open up after being raped, defiled when looking for wood fuel for cooking, because of fear of segregation and harsh treatment by the health workers who we thought would help us but turned out to be violent," said Mina. In camps, refugees become clustered in settlements designed to be temporary. Camps are often quickly built in simple and flimsy structures. Refugee settlements themselves rarely mitigate or help people adapt to the impacts of climate change. This further puts people in danger of extreme weather and disasters. Many temporary refugee settlements are located in remote, isolated, and marginal lands.</p>
+                        <p>The <a href="https://www.ipcc.ch/report/ar6/wg2/">Intergovernmental Panel on Climate Change (IPCC) 2022 Assessment Report</a> and a 2023 <a href="https://unu.edu/article/refugee-settlements-extremely-vulnerable-climate-crises">study by researchers at United Nations University</a> provide evidence that refugee settlements are more exposed to climate change impacts. For example, in Pakistan, refugee settlements in mountainous areas are hotter in summer and colder in winter compared to the national average. Refugees in Cox's Bazar, Bangladesh &mdash; one of the world's largest refugee settlements &mdash; experience <a href="https://doi.org/10.1007/s41134-022-00212-5">extreme rainfall, landslides, and flooding</a>. Forcibly displaced people, whether they cross borders or move within their own country, are also disproportionately affected by climate disasters, exacerbating their vulnerabilities and undermining adaptation.
+                        </p>
+                        <small class="text-secondary">* We use a pseudonym here to protect the identity of this source.</small>
+                        <video class="full-video d-mobile" loop muted playsinline autoplay>
+                            <source src="assets/5090934-hd_1920_1080_30fps.mp4" type="video/mp4"></source>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section text big-break" id="section-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 p-sm-5 main">
+                        <h3>Displacement is a gendered experience</h3>
+                        <p>Climate change also intersects disparities in health and sanitation among displaced women. Refugee camps can have <a href="https://doi.org/10.1186/s12939-022-01626-3">limited sexual and reproductive health services</a> and inadequate water, sanitation, and hygiene (WASH) facilities. The health of pregnant and breastfeeding women, survivors of gender-based violence, and LGBTQIA+ people are particularly threatened during displacement. Temporary settlements for refugees and internally displaced persons are often overcrowded. Climate change is a cross-cutting driver of displacement, and rates of displacement have risen globally and become more protracted. This further limits resources in camps despite continuous interventions by international and humanitarian actors. </p>
+                        <p>To manage their menstruation, women and girls more frequently use toilet and shower facilities. This increases their risk of infectious diseases. Inadequate facilities without proper lighting can also increase the risk of gender-based violence. Explaining the lack of access to adequate and safe water, sanitation, and hygiene facilities, Mina noted &mdash;</p>
+                        <p class="px-5" style="text-align: justify; font-style: italic;">Women suffer a lot due to lack of water, proper sanitation in terms of good pit latrines for better management of used sanitary materials. The same to the schools, no enough water for them to manage their menstrual cycle while at school. No scenery constructed at schools for disposing of used sanitaries for girl children thus making them miss classes until when they're done.</p>
+                        <p>She also described how many women and girls in refugee camps experience sexual abuse and exploitation by healthcare and humanitarian workers. These traumatic experiences further impact well-being, as survivors opt for self-treatment or seek outside health centers. 
+                        </p>
+                        <p>Mina believes women's empowerment is the only way to end violence against refugee women and protect sexual and reproductive health rights in refugee settlements, stating, "enhance better disposal of used sanitary materials, provide training to women of reproductive age on making of reusable sanitary pads, provision of clean cooking energies to prevent moving long distances looking for wood fuel and ending up in the hands of the ruthless rapists."
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <figure class="figure d-mobile">
+                            <img src="assets/pexels-tkirkgoz-16794019.jpg" class="figure-img img-fluid">
+                            <figcaption class="figure-caption">Nepalese women process grain.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section text" id="section-4">
+            <div class="container">
+                <div class="row pb-lg-5 main">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8 pt-sm-5 px-lg-5">
+                        <h2>Gendered Climate Immobility: Women stay behind in labor-based migration along the flooding Kosi River</h2>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 main text-center">
+                        <figure class="figure" id="interview">
+                            <video controls style="max-height: 80vh; max-width: 100%; background-size: cover;">
+                                <source src="assets/koshi_river_interview_720.mp4" type="video/mp4"></source>
+                            </video>
+                            <figcaption class="figure-caption px-lg-5">Anjali, a woman living near the Kosi River in Nepal, describes her daily life after the 2008 floods. &copy; Dr. Shubhi Misra.</figcaption>
+                        </figure>                  
+                    </div>
+                    <div class="col-lg-4 px-lg-5 main">
+                        <p>Climate displacement does not only affect women and girls within the refugee system. This interview is with Anjali<small>*</small> from Hanumannagar village, located near the India-Nepal border. The Kosi River, with headwaters in the Himalayas, flows through the low-lying areas of Nepal and enters India near this village. People call this region the "sorrow of Bihar" due to its propensity to cause floods almost every year. This area is among the poorest regions of India and Nepal with a low literacy rate. The people here are primarily engaged in agriculture and related activities. Farmers here have seen the once fertile lands decline in productivity.
+                        </p>
+                        <small class="text-secondary">* We use a pseudonym here to protect the identity of this source.</small>
+                    </div>
+                    <div class="col-lg-4 main text-center">
+                        <figure class="figure">
+                            <img src="assets/IMG_2406.jpg" class="figure-img img-fluid" alt="Interior of Anjali's store.">
+                            <figcaption class="figure-caption">Interior of Anjali's store. &copy; Dr. Shubhi Misra.</figcaption>
+                        </figure>                 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 pt-lg-5 main mobile-full-width">
+                        <div id="map" class="my-3" style="height: 50vh; overflow-clip-margin: content-box;"></div>
+                    </div>
+                    <div class="col-lg-6 p-lg-5 main">
+                        <p>Anjali refers to the 2008 flood, which occurred due to a breach in the embankment. This was one of the biggest disasters in the region based on property and loss of life. Beside these acute losses, floods have an ongoing detrimental impact on agricultural livelihoods. The large amounts of silt brought by floodwaters degrade farmland soil.
+                        </p>
+                        <p>To deal with lower agricultural productivity, people are diversifying their income sources. Many migrate to different parts of India, especially labor-intensive workplaces, to earn wages. People also find blue-collar jobs in West Asian countries like Qatar, Saudi Arabia, and UAE, as well as Southeast Asian countries like Malaysia.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 main"></div>
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/IMG_2370.jpg" class="figure-img img-fluid" alt="The Kosi River.">
+                            <figcaption class="figure-caption">The Kosi River. &copy; Dr. Shubhi Misra.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3 main"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/IMG_2401.jpg" class="figure-img img-fluid" alt="Women support rural economies while men migrate to diversify livelihoods.">
+                            <figcaption class="figure-caption">Women support rural economies while men migrate to diversify livelihoods. &copy; Dr. Shubhi Misra.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6 p-lg-5 main">
+                        <p>Unlike other South Asian borders, the India-Nepal border is visa-free. This allows people to work legally in both countries. People of the borderland region have the benefit of migrating to the neighboring country to find resources in times of crisis. A field visit to the India-Nepal border region resulted in some interesting insights. First, if there are enough job opportunities, people prefer to stay in place rather than migrate. Second, men migrate at higher rates, while women stay behind to look after family. Women who stay put contribute economically by rearing cattle or working low-income part-time jobs. 
+                        </p>
+                        <p>While sea level rise and coastal floods in South Asia receive a lot of attention, flooding from rivers is also a serious natural hazard. As Anjali's story highlights, these floods impact people's mobility and livelihoods. Thus, policies need to prepare for these impacts and provide appropriate interventions.
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="section text">
+            <div class="container">
+                <div class="row pb-lg-5 main">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8 pt-sm-5 px-lg-5">
+                        <h2>Flooding disrupts family care and livelihoods in Budalangi-Busia County, Kenya</h2>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 main text-center">
+                        <figure class="figure">
+                            <video style="max-height: 80vh; max-width: 100%; background-size: cover;" playsinline muted loop autoplay>
+                                <source src="assets/VID-20240626-WA0579.mp4" type="video/mp4"></source>
+                            </video>
+                            <figcaption class="figure-caption px-lg-5">Conditions in a camp in Budalangi-Busia County, Kenya. &copy; Dr. Lucy Mandillah.</figcaption>
+                        </figure>                  
+                    </div>
+                    <div class="col-lg-6 px-lg-5 main">
+                        <p>Women in Budalangi, Kenya, face unique challenges during floods. They are often responsible for household management and caregiving. These responsibilities become particularly burdensome in the chaotic aftermath of flooding. Displacement disrupts women's ability to manage the household and care for children and the elderly. A woman from Budalangi reported, "When floods occur, we face significant challenges as women. After losing our homes, we struggle to provide proper care for our children and the elderly. The situation is very tough because we don't have a safe place to live, and sometimes we lack enough time to care for our family as we used to." Natural hazards impacts on habitability and life quality are undeniable.
+                        </p>
+                        <p>Additionally, Women also have roles in fetching water and managing sanitation in camps. These make women more exposed to health risks such as waterborne diseases. Additionally, for many, agriculture is a primary means of livelihood. The economic impact of flooding on agriculture disproportionately affects women, as an interviewee explained, "Life is always difficult for us. Floods destroy our fields and kill our crops, so we lose the income that is crucial for our family. Often, women are primarily responsible for farming and securing food, and this situation makes life very difficult forcing women to engage in prostitution to earn a living."</p>
+                        <p>These are compounding struggles. "The support we receive often does not meet all our needs. Although we get food and other aid, we still lack clean water supplies and decent shelter. Sometimes our girls are raped. This makes the situation even more difficult, especially for women who are struggling to manage their families," summarized a third interviewee in Budalangi.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/VID-20240626-WA0585.mp4_snapshot_00.31.923.jpg" class="figure-img img-fluid" alt="Men's agriculture- and fishing-based livelihoods are impacted by flooding.">
+                            <figcaption class="figure-caption">Men's agriculture- and fishing-based livelihoods are impacted by flooding. &copy; Dr. Lucy Mandillah.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-8 p-lg-5 main">
+                        <p>Because many men typically make a living from fishing and agriculture, they face immediate financial losses from flooding that destroys crops and fisheries. The economic strain can exacerbate stress and family tensions. Men often bear the burden of the labor involved in relocating and rebuilding. which can lead to physical exhaustion and mental stress. 
+                        </p>
+                        <p>The disruption of their livelihoods can also affect men's social status and identity within the community. As a man from the region described, "Floods significantly impact our fishing and agricultural activities making us unable to meet our obligations as men. In fishing, the areas we fish in are filled with debris and weeds, making it difficult to catch fish as we used to."
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/FLOODS VID-20240626-WA0588.mp4_snapshot_00.14.390.jpg" class="figure-img img-fluid" alt="Agriculture impacted by flooding.">
+                            <figcaption class="figure-caption">Agriculture impacted by flooding. &copy; Dr. Lucy Mandillah.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-8 p-lg-5 main">
+                        <p>Children and the elderly are particularly vulnerable during floods. Children may face disruptions in education, as schools are often damaged or closed. The elderly can have mobility challenges which make it difficult for them to evacuate or access essential services in temporary camps. Both groups are at higher risk of health complications, including malnutrition and disease. About flooding impacts on children and the elderly, an assistant chief said &mdash;
+                        </p>
+                        <p class="px-5" style="text-align: justify; font-style: italic;">"Children face significant challenges during floods. Schools have lost their infrastructure, leading to closures . This has greatly affected children's education as they miss their daily lessons and struggle to keep up with their studies. Additionally, children are at higher risk of contracting infectious diseases due to poor sanitation in displacement camps. These issues add to the burden on families who are already facing difficult conditions.
+                        </p>
+                        <p class="px-5" style="text-align: justify; font-style: italic;">"The elderly have faced many challenges during floods and in the camps. Due to mobility issues, they struggle  to evacuate from flooded areas to reach temporary camps. This has put them at risk for illnesses and a lack of essential services. Also, they often lack the strength or sufficient support to care for themselves, which increases health risks and affects their overall well-being."
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="section text">
+            <div class="container">
+                <div class="row pb-lg-5 main">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8 pt-sm-5 px-lg-5">
+                        <h2>Migrant workers and their families struggle with extreme heat in Indian cities</h2>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/1_Migrant Stories from Surat.jpg" class="figure-img img-fluid" alt="Migrants walk to work in Surat, the textile and diamond hub of India.">
+                            <figcaption class="figure-caption px-lg-5">Migrants walk to work in Surat, the textile and diamond hub of India. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>                  
+                    </div>
+                    <div class="col-lg-6 px-lg-5 main">
+                        <p>Climate change is a stress multiplier across the globe, but more so in the global south. Unlike the sudden onset disasters that lead to huge disaster-led displacements, the systemic stress created by climate change-induced slow-onset disasters leaves deeper imprints on the internal migration patterns in South Asia. <a href="https://link.springer.com/article/10.1007/s40641-020-00153-z">A recent study</a> on migration and climate change in South Asia found that in climate-sensitive hotspots migration becomes an important strategy of livelihood diversification to respond to different risks including climate change. The same study refers to the out-migration from the Indian state of Odisha, where shrinking natural resources and decreasing agricultural productivity due to recurrent natural disasters like floods, droughts, and cyclones are known to have impelled migration. The labour migration from rural districts of Odisha on the East coast of India to cities like Surat and Ahmedabad in the state of Gujarat, on the west coast of India is one of the oldest major labour migration routes in India.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/2_Labourers Working along coalfired boiler.jpg" class="figure-img img-fluid" alt="Laborers working along coal-fired boilers.">
+                            <figcaption class="figure-caption">Laborers working along coal-fired boilers. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6 p-lg-5 main">
+                        <p>More than half a million migrant workers from Odisha form the backbone of the dominant textile, and diamond industries of Surat. The migration to Surat is a seasonal pattern, where male members of the family migrate to the city at an early age, where they find employment for 6-8 months and spend the rest of the months in the village along with family members. With time, migrant men bring along their wives and kids to Surat, who follow the seasonal pattern as well. While the gains from migration appear to be significant, the costs are substantial, especially at the destination sites. A field visit to Surat and interviews with migrant workers and their family members reveal disturbing facts.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/3_Inside a Printing and Dyeing Unit.jpg" class="figure-img img-fluid" alt="Inside a printing and dyeing unit. The visible lack of ventilation or natural light is a common feature across informal workspaces in Surat.">
+                            <figcaption class="figure-caption">Inside a printing and dyeing unit. The visible lack of ventilation or natural light is a common feature across informal workspaces in Surat. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6 p-lg-5 main">
+                        <p>The workers find work in power looms, dying and printing units, coal-fired boilers, and such informal jobs. The work units are dingy concrete halls fitted with heavy machinery, where natural light or ventilation is hard to find. The formal, safe accommodation is hardly available to workers. They manage to find places of residence in dormitories &mdash; often known as mess rooms &mdash; through caste-based social capital and networks. The mess rooms are in the vicinity of industrial units and are generally bereft of enough light, ventilation, or basic amenities. The square rooms within rickety concrete structures, accommodate 50-80 men, who share spaces between 12-hour shifts.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/4_Migrant workers, resting in mess room.jpg" class="figure-img img-fluid" alt="Migrant workers resting in a mess room.">
+                            <figcaption class="figure-caption">Migrant workers resting in a mess room. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/5_Migrant men who cook for migrant wokers.jpg" class="figure-img img-fluid" alt="The migrant men who cook for migrant workers.">
+                            <figcaption class="figure-caption">The migrant men who cook for migrant workers. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/6_Messroom.jpg" class="figure-img img-fluid" alt="A mess room.">
+                            <figcaption class="figure-caption">A mess room. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6 p-lg-5 main">
+                        <p>The hot, humid work units and mess rooms are frustrating sites. They become heat traps during the hot summer days, especially during the heat waves, which are on the rise due to climate change. Lack of cooling and access to water both at the workplace and at the resting places makes life more than miserable for migrant workers. Most of the workers suffer from heat cramps, heat exhaustion, and at times, heat-strokes. The heat causes light-headedness, and dizziness while the humidity-induced sweating causes itchy skin and heat rashes. Many workers complain of sleep deprivation due to worsening heat, which leads to irritability and aggression.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/7_Heat rashes and itchy skin.jpg" class="figure-img img-fluid" alt="Heat rashes and itchy skin of a worker.">
+                            <figcaption class="figure-caption">Heat rashes and itchy skin of a worker. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/8_Mess dwellers skin condition.jpg" class="figure-img img-fluid" alt="A mess room dweller's skin condition.">
+                            <figcaption class="figure-caption">A mess room dweller's skin condition. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/9_Interaction with Heera and Pramila.jpg" class="figure-img img-fluid" alt="Heat rash.">
+                            <figcaption class="figure-caption">Entrepreneurial Odiyan migrants Heera Pradhan (left) and Pramila Behera. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6 p-lg-5 main">
+                        <p>Workers with families live in informal settlements, often away from the industrial units. The shanty colonies consist of smaller residential units, built of concrete walls and asbestos roofs, that house a family of 6-8 people. These houses double up as work units for women in the house who engage in small-scale businesses or outsourced work assignments. The entrepreneurial women offer tiffin service to working men, or put up breakfast stalls or run tea joints to make ends meet. The cascading effect of increasing heat, lack of basic amenities, and the poor infrastructure of houses exert great pressure on women's health and productivity. An interaction with Pramila Didi and Heera Ben, entrepreneurial migrant Odiya women in one of the informal settlements in Surat, brought out finer nuances of vulnerability to heat.</p>
+                        <p>Pramila Behera, 50, hails from Ganjam District of Odisha and runs a breakfast joint near her house between 6 AM to 11 AM. She gets up at 3 AM and starts preparing food from 4 AM onwards. When she gets back home, some rest in the afternoon is indeed important for her. However, the afternoons are very hot and humid in her asbestos-roofed, concrete-walled house, with electricity failures in between. The lack of comfort sets in sleep deprivation making it far more tiring for her to fetch fresh groceries or continue household chores in the evening. The evenings and nights have become increasingly warmer in recent years and Pramila Ben experiences fluctuations in blood pressure, a sense of nausea, and general fatigue. The extreme heat in April and May does not allow her to stand at the breakfast joint, so she keeps the shop closed and heads towards her village in Odisha to seek respite. Increasingly hotter summer months mean loss of livelihood and more physical distress for Pramila Ben.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/11_Tunni Pradhan.jpg" class="figure-img img-fluid" alt="Tunni Pradhan (40) talks about womens lack of agency in desiging and implementing their behavioural responses to extreme heat.">
+                            <figcaption class="figure-caption">Tunni Pradhan (40) talks about womens lack of agency in desiging and implementing their behavioural responses to extreme heat. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-4 p-lg-5 main">
+                        <p>Heera Pradhan, 35, comes from Ganjam district as well. She runs a tiffin service for working men. She is younger than Pramila Ben but admits that heat leads to indescribable fatigue and tiredness for her. She would have preferred to have far more comfortable clothing during the hot and humid afternoons, but the male gaze around her and traditional beliefs restrain her from wearing comfortable clothing, the freedom that her native village offers her frequently.</p> 
+                        <p>Heera's neighbour Tunni Pradhan, 40, also runs a Tiffin service. The cooking sessions in the afternoons in front of the Chulha and the warmer, humid nights are difficult to deal with, for her. She often suffers from headaches, nausea, and skin rashes during the summer months and observes that summer months are getting far harsher with every passing year. Tunni says that the men of the household seek comfort from sleeping outside or on the roof but women do not get the same privilege.</p>
+                    </div>
+                    <div class="col-lg-4 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/10_Asbestos roofed house in Basti.jpg" class="figure-img img-fluid" alt="The Asbestos-roofed house.">
+                            <figcaption class="figure-caption">The Asbestos-roofed house that serves as workspace for "Tiffin service" provider women, during the daytime. The asbestos roof and concrete walls soak up heat during the day and release it in the evening. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/12_Concrete Structures become death traps.jpg" class="figure-img img-fluid" alt="Concrete structures become dangerous during heatwaves.">
+                            <figcaption class="figure-caption">Concrete structures become dangerous during heatwaves. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/13_Typical view from migrant workers settlement.jpg" class="figure-img img-fluid" alt="A typical view from a migrant workers' settlement. Regular and uninterrupted access to water would help create better heat resilience at the household level.">
+                            <figcaption class="figure-caption">A typical view from a migrant workers' settlement. Regular and uninterrupted access to water would help create better heat resilience at the household level. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 py-lg-5 main text-center">
+                        <figure class="figure">
+                            <img src="assets/mayuresh_images_rescaled/14_Vulnerability to extreme heat.jpg" class="figure-img img-fluid" alt="Exposure and vulnerability to extreme heat is a gendered phenomenon.">
+                            <figcaption class="figure-caption">Exposure and vulnerability to extreme heat is a gendered phenomenon. &copy; Mayuresh Bhadsavle.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-6 p-lg-5 main">
+                        <p>In 2024, <a href="https://www.indiatoday.in/environment/story/india-faces-record-breaking-heatwave-worsened-by-climate-change-2545674-2024-05-30">India witnessed the worst form of heat waves</a>, which are attributed to the changing climate. Climate change-induced extreme heat is an abstract challenge and we need to think of it from different perspectives. Sweltering cities and abject lack of heat-resilient basic infrastructure highlighted the increased vulnerability of the urban poor. A closer look at it through a gender lens shows that women are far more vulnerable to extreme heat, at their workplace and their houses. We need to develop a better understanding of vulnerability to extreme heat through a gendered perspective, that would help design better policy responses and create effective heat resilience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section mt-lg-5 pt-3 pt-lg-0" style="background-color: #d1eef9; color: #121c42">
+            <div class="container py-lg-5 py-3">
+                <div class="row">
+                    <div class="col-lg-6 pb-lg-0 px-lg-5">
+                        <h1>Women's participation and leadership is critical for climate adaptation</h1>
+                        <h3>Given the multitude of gendered impacts of climate hazards, it is clear that there is no successful adaptive future without having women involved.</h3>
+                        <p>"The concept of community meetings and workshops has been very empowering but at the same time demanding," said Leena Eisa. Leena is a green development and climate justice activist from Sudan. As a leader of <a href="https://www.climatesirens.com/bio-leena">SWANA Climate Sirens</a> and SHEActs Initiative, she is proud of her Sudanese culture, which values communities and respect for nature. From this identity, she has developed her passion for climate activism and women's empowerment. However, she also called attention to barriers against women based on cultural practices and beliefs. "Sudanese culture, especially the gender roles and expectations of women, lock them out of public space and decision making, hence they cannot fight for their own and other's rights," said Leena. She said patriarchal norms in society limit women's participation in decision-making. These norms and limited roles prevent women and girls from realizing their full potential and rights.</p>
+                        <p>"As a woman and displaced person, my ideas and information were always sidelined by those of other knowledgeable people," Leena said. Her experience shows top-down models of participation can limit women's voices. Making participation meaningful requires addressing power imbalances, such as gender inequality. Leena's leadership, informed by her lived experience of climate displacement and organizing, are a model.
+                        </p>
+                        <p>Women's participation and leadership are key to addressing gender-based disparities in climate-driven displacement. Leena believes in a holistic approach to climate mitigation and adaptation. "Climate change and migration are inseparable from each other," said Leena. People working on these issues need to understand the intersectionality of the environment, conflict, and socioeconomic factors like gender. Community development and disaster management actors must also ensure and improve women's access to information and inclusion. Leena also emphasized peer support, which is effective in healing displaced women's trauma.
+                        </p>
+                        <p>Gender-responsive programming is needed to support and protect women and girls experiencing displacement. Such programming would acknowledge the unequal impacts of climate change on women. Gender disparities can be addressed through climate adaptation measures, improved shelter and WASH facilities, and prevention of gender-based violence. Such programmes and decision-making must include affected women to effectively address these disparities. The most pivotal actions will put women's voices and leadership front and center. &FilledSmallSquare;
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <figure class="figure">
+                            <img src="assets/leena_eissa_profile.jpg" class="figure-img img-fluid" alt="Leena Eisa.">
+                            <figcaption class="figure-caption">Courtesy Leena Eisa.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section bg-light">
+            <div class="container py-lg-5">
+                <div class="row my-lg-5">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8 py-5 px-lg-5" style="background-color: #043e47; color: #d1eef9">
+                        <h1>Taking on climate displacement</h1>
+                        <p>Refugees International is leading efforts to address gaps in international law, build resiliency in frontline communities, and forge innovative protection pathways for people displaced by climate.</p>
+                        <h5><a href="https://www.refugeesinternational.org/climate-displacement/" style="border-bottom: 2px solid #ff633e; color: #d1eef9; text-decoration: none;">Learn more and take action</a></h5>
+                        <br><br>
+                        <!-- <h2>Share this article to raise awareness on climate displacement</h2> -->
+                        <!-- AddToAny BEGIN -->
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style mt-3">
+                            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                            <a class="a2a_button_email"></a>
+                            <a class="a2a_button_sms"></a>
+                            <a class="a2a_button_facebook"></a>
+                            <a class="a2a_button_linkedin"></a>
+                            <a class="a2a_button_whatsapp"></a>
+                            <a class="a2a_button_facebook_messenger"></a>
+                            <a class="a2a_button_reddit"></a>
+                            <a class="a2a_button_pocket"></a>
+                        </div>
+                        <script async src="https://static.addtoany.com/menu/page.js"></script>
+                        <!-- AddToAny END -->
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="section text-dark bg-light">
+            <div class="container py-5">
+                <div class="row mb-5">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8 px-sm-5 px-lg-5" style="color: #121c42;">
+                        <div class="logo">
+                            <span>
+                                <svg viewBox="0 0 252 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#121c42" d="M0 110.248h249.397v7.746H0zm0-62.201h8.413V27.499h1.991c.55 0 .996.057 1.34.17.365.091.652.273.858.546.229.25.389.59.48 1.022.115.432.206 1 .275 1.704l.275 12.267c0 .568.011 1.068.034 1.5.046.43.08.84.103 1.226.046.363.092.715.137 1.056.07.341.138.693.206 1.056h8.516c-.092-.34-.172-.67-.24-.988-.046-.34-.103-.738-.172-1.192a55.035 55.035 0 0 1-.137-1.67c-.046-.659-.104-1.5-.172-2.522l-.172-9.881c-.069-1.363-.194-2.5-.377-3.408-.184-.909-.447-1.658-.79-2.249-.344-.59-.767-1.056-1.27-1.397-.481-.34-1.077-.614-1.786-.818a8.849 8.849 0 0 0 1.888-1.022 5.957 5.957 0 0 0 1.511-1.602c.412-.659.733-1.442.961-2.351.252-.909.378-1.976.378-3.203V8.962c0-1.136-.114-2.136-.343-2.999-.229-.886-.561-1.658-.996-2.317a5.868 5.868 0 0 0-1.648-1.704 9.4 9.4 0 0 0-2.3-1.124c-.87-.296-1.855-.5-2.954-.614A29.4 29.4 0 0 0 10.404 0H0v48.047Zm8.413-27.193V6.815H10.3c.641 0 1.168.057 1.58.17.434.091.778.262 1.03.512.274.227.457.545.549.954.114.386.172.863.172 1.43v7.804c0 .568-.057 1.057-.172 1.466a1.824 1.824 0 0 1-.55.954c-.251.25-.595.443-1.03.579-.412.113-.927.17-1.545.17H8.413Zm27.366 28.01c1.763 0 3.285-.204 4.567-.613 1.305-.409 2.369-1 3.193-1.772a7.031 7.031 0 0 0 1.854-2.896c.412-1.159.618-2.477.618-3.953v-4.805h-8v5.248c0 .454-.046.863-.138 1.227-.091.34-.228.636-.412.886a1.87 1.87 0 0 1-.686.579c-.252.113-.573.17-.962.17a3.3 3.3 0 0 1-.858-.102 2.516 2.516 0 0 1-.652-.34 1.872 1.872 0 0 1-.447-.58 4.145 4.145 0 0 1-.275-.852 11.025 11.025 0 0 1-.171-1.09 27.189 27.189 0 0 1-.035-1.431V21.637c0-.704.035-1.318.103-1.84.092-.523.218-.954.378-1.295.183-.34.435-.59.755-.75.321-.181.71-.272 1.168-.272.275 0 .515.034.721.102.206.045.39.125.55.239.183.113.331.272.446.477.137.204.24.454.309.75.069.272.126.601.172.987.045.387.068.818.068 1.295v5.725h-5.837v5.18h13.975v-7.974c0-1.5-.08-2.84-.24-4.021-.138-1.204-.367-2.272-.687-3.203-.32-.932-.744-1.738-1.27-2.42a6.306 6.306 0 0 0-1.958-1.67c-.755-.43-1.648-.749-2.678-.953-1.03-.228-2.209-.341-3.537-.341-1.946 0-3.605.216-4.979.647-1.35.432-2.46 1.102-3.33 2.01-.87.91-1.5 2.068-1.889 3.476-.389 1.386-.583 3.056-.583 5.01v14.925c0 1.294.08 2.476.24 3.544.16 1.044.412 1.987.755 2.828a8.23 8.23 0 0 0 1.374 2.146 7.17 7.17 0 0 0 2.06 1.466c.801.386 1.717.67 2.747.852 1.053.204 2.243.306 3.57.306Zm14.919-.817h8.172V18.639h3.675v-6.1H58.87V8.52c0-.5.035-.897.103-1.193.07-.318.184-.568.344-.75.183-.181.435-.306.755-.374a6.887 6.887 0 0 1 1.305-.102h1.167V0h-2.987c-1.625 0-3.01.125-4.155.375-1.121.25-2.037.681-2.746 1.295-.687.613-1.19 1.42-1.511 2.42-.298.976-.447 2.203-.447 3.68v4.77h-2.85v6.1h2.85v29.407Zm20.736.647a7.11 7.11 0 0 0 2.026-.273 6.64 6.64 0 0 0 1.682-.647 5.203 5.203 0 0 0 1.27-1.022c.367-.387.665-.795.893-1.227v2.522h8.138V12.54h-8.138v26.613c0 .59-.045 1.102-.137 1.533-.069.432-.194.784-.378 1.057-.16.272-.377.477-.652.613-.252.113-.56.17-.927.17-.39 0-.721-.057-.996-.17a1.596 1.596 0 0 1-.618-.613c-.16-.273-.286-.625-.377-1.057a9.897 9.897 0 0 1-.104-1.533V12.54h-8.172v27.77c0 1.477.126 2.75.378 3.817.275 1.045.675 1.908 1.202 2.59a4.874 4.874 0 0 0 2.026 1.499c.824.318 1.785.477 2.884.477Zm24.759-3.408a7.27 7.27 0 0 0 2.06-.272 6.68 6.68 0 0 0 1.683-.716 5.451 5.451 0 0 0 1.236-1.022 5.08 5.08 0 0 0 .859-1.295v8.45c0 .455-.023.853-.069 1.194-.046.363-.114.67-.206.92-.069.272-.16.5-.275.681a1.094 1.094 0 0 1-.446.409c-.16.114-.355.193-.584.239a2.298 2.298 0 0 1-.72.102c-.367 0-.688-.046-.962-.137a1.56 1.56 0 0 1-.687-.443 1.972 1.972 0 0 1-.412-.783 5.586 5.586 0 0 1-.103-1.159V46.99h-8.035v3.885c0 1.545.195 2.862.584 3.953.389 1.113.984 2.021 1.785 2.726.824.727 1.877 1.25 3.16 1.567 1.281.34 2.803.511 4.566.511 1.19 0 2.266-.08 3.228-.238.984-.16 1.865-.42 2.644-.784a6.496 6.496 0 0 0 2.06-1.363c.572-.568 1.053-1.26 1.442-2.079.412-.818.71-1.772.893-2.862.183-1.09.275-2.34.275-3.748V12.54h-8.138v2.59a4.555 4.555 0 0 0-.859-1.261 5.039 5.039 0 0 0-1.236-1.057 5.917 5.917 0 0 0-1.682-.681 7.291 7.291 0 0 0-2.06-.273c-1.122 0-2.14.17-3.056.511a5.472 5.472 0 0 0-2.335 1.67c-.641.75-1.134 1.75-1.477 2.999-.343 1.25-.515 2.794-.515 4.634v13.8c0 1.205.069 2.284.206 3.238.16.954.39 1.794.687 2.521a7.12 7.12 0 0 0 1.099 1.875c.434.5.927.92 1.476 1.26.55.318 1.145.557 1.786.716.663.136 1.373.204 2.128.204Zm3.572-6.065c-.275 0-.527-.034-.756-.102a1.963 1.963 0 0 1-.618-.307 2.208 2.208 0 0 1-.446-.545 4.152 4.152 0 0 1-.275-.852 12.59 12.59 0 0 1-.172-1.159 15.841 15.841 0 0 1-.068-1.567V22.422c0-.568.022-1.068.068-1.5.046-.454.103-.852.172-1.192.069-.341.16-.625.275-.852.137-.227.286-.409.446-.545a1.31 1.31 0 0 1 .584-.307 2.77 2.77 0 0 1 .79-.102c.274 0 .526.034.755.102.229.068.435.182.618.34.183.137.332.33.446.58.115.227.206.511.275.852.092.318.16.693.206 1.124.046.41.069.875.069 1.398v12.437c0 .545-.023 1.034-.069 1.465a7.536 7.536 0 0 1-.206 1.159c-.069.318-.16.59-.275.818a1.87 1.87 0 0 1-.446.579c-.183.136-.389.25-.618.34a2.64 2.64 0 0 1-.755.103Zm24.404 9.643c1.763 0 3.285-.204 4.567-.613 1.305-.409 2.369-1 3.193-1.772a7.031 7.031 0 0 0 1.855-2.896c.412-1.159.618-2.477.618-3.953v-4.805h-8.001v5.248c0 .454-.046.863-.137 1.227-.092.34-.229.636-.412.886a1.87 1.87 0 0 1-.687.579c-.252.113-.572.17-.961.17-.321 0-.607-.034-.859-.102a2.508 2.508 0 0 1-.652-.34 1.886 1.886 0 0 1-.447-.58 4.133 4.133 0 0 1-.274-.852 10.99 10.99 0 0 1-.172-1.09 27.101 27.101 0 0 1-.034-1.431V21.637c0-.704.034-1.318.103-1.84.091-.523.217-.954.377-1.295.184-.34.435-.59.756-.75.32-.181.71-.272 1.167-.272.275 0 .515.034.721.102.206.045.39.125.55.239.183.113.332.272.446.477.138.204.241.454.309.75.069.272.126.601.172.987.046.387.069.818.069 1.295v5.725h-5.838v5.18h13.975v-7.974c0-1.5-.08-2.84-.24-4.021-.137-1.204-.366-2.272-.687-3.203-.32-.932-.744-1.738-1.27-2.42a6.314 6.314 0 0 0-1.957-1.67c-.756-.43-1.649-.749-2.679-.953-1.03-.228-2.209-.341-3.536-.341-1.946 0-3.606.216-4.979.647-1.351.432-2.461 1.102-3.331 2.01-.87.91-1.499 2.068-1.888 3.476-.389 1.386-.584 3.056-.584 5.01v14.925c0 1.294.08 2.476.24 3.544.161 1.044.412 1.987.756 2.828a8.234 8.234 0 0 0 1.373 2.146 7.169 7.169 0 0 0 2.06 1.466c.802.386 1.717.67 2.747.852 1.053.204 2.244.306 3.571.306Zm23.808 0c1.763 0 3.285-.204 4.567-.613 1.305-.409 2.369-1 3.193-1.772a7.03 7.03 0 0 0 1.854-2.896c.412-1.159.618-2.477.618-3.953v-4.805h-8v5.248c0 .454-.046.863-.137 1.227-.092.34-.229.636-.412.886-.184.25-.412.443-.687.579-.252.113-.572.17-.962.17a3.3 3.3 0 0 1-.858-.102 2.508 2.508 0 0 1-.652-.34 1.871 1.871 0 0 1-.447-.58 4.133 4.133 0 0 1-.274-.852 10.99 10.99 0 0 1-.172-1.09 27.101 27.101 0 0 1-.034-1.431V21.637c0-.704.034-1.318.103-1.84.091-.523.217-.954.377-1.295.183-.34.435-.59.756-.75.32-.181.709-.272 1.167-.272.275 0 .515.034.721.102.206.045.389.125.55.239.183.113.331.272.446.477.137.204.24.454.309.75.069.272.126.601.172.987.045.387.068.818.068 1.295v5.725h-5.837v5.18h13.975v-7.974c0-1.5-.08-2.84-.24-4.021-.138-1.204-.366-2.272-.687-3.203-.32-.932-.744-1.738-1.27-2.42a6.307 6.307 0 0 0-1.958-1.67c-.755-.43-1.648-.749-2.678-.953-1.03-.228-2.209-.341-3.537-.341-1.945 0-3.605.216-4.978.647-1.351.432-2.461 1.102-3.331 2.01-.87.91-1.499 2.068-1.889 3.476-.389 1.386-.583 3.056-.583 5.01v14.925c0 1.294.08 2.476.24 3.544.16 1.044.412 1.987.755 2.828a8.262 8.262 0 0 0 1.374 2.146 7.169 7.169 0 0 0 2.06 1.466c.801.386 1.717.67 2.747.852 1.053.204 2.243.306 3.571.306Zm23.018 0c1.122 0 2.14-.08 3.056-.238a11.507 11.507 0 0 0 2.541-.648 7.098 7.098 0 0 0 1.957-1.124 6.408 6.408 0 0 0 1.374-1.568 6.756 6.756 0 0 0 .858-2.078 9.764 9.764 0 0 0 .309-2.522v-2.93c0-1.34-.126-2.476-.378-3.408-.229-.954-.583-1.783-1.064-2.487a7.609 7.609 0 0 0-1.854-1.875c-.733-.545-1.626-1.079-2.679-1.601l-3.571-2.01a12.627 12.627 0 0 1-1.304-.887 3.969 3.969 0 0 1-.824-.954 3.522 3.522 0 0 1-.412-1.226 11.376 11.376 0 0 1-.103-1.67V19.15c0-.34.034-.636.103-.885a1.96 1.96 0 0 1 .343-.614c.16-.182.355-.306.584-.375.229-.09.492-.136.789-.136.229 0 .424.023.584.068.183.023.343.08.481.17a.99.99 0 0 1 .412.341c.114.137.206.307.275.511.068.205.114.455.137.75.046.273.069.602.069.988v4.805h7.863V20.41c0-1.59-.206-2.942-.618-4.055-.39-1.113-.985-2.01-1.786-2.692-.801-.704-1.82-1.215-3.056-1.533-1.236-.318-2.69-.477-4.361-.477-1.602 0-3.021.17-4.257.511-1.214.34-2.232.84-3.056 1.5a5.898 5.898 0 0 0-1.855 2.419c-.412.977-.618 2.101-.618 3.373v2.726c0 1.318.103 2.454.309 3.408.229.954.573 1.794 1.031 2.521a7.535 7.535 0 0 0 1.785 1.943c.755.568 1.66 1.113 2.713 1.635l3.674 2.079c.503.318.927.613 1.27.886.343.273.607.59.79.954.206.363.355.784.446 1.26.092.478.138 1.091.138 1.84v2.556c0 .228-.023.444-.069.648a3.34 3.34 0 0 1-.172.511 1.78 1.78 0 0 1-.274.443 1.31 1.31 0 0 1-.412.273 3.426 3.426 0 0 1-.516.17 2.407 2.407 0 0 1-.583.068c-.389 0-.733-.057-1.03-.17a1.563 1.563 0 0 1-.721-.545 3.085 3.085 0 0 1-.447-.954 6.643 6.643 0 0 1-.137-1.432v-4.975h-7.932v4.464c0 1.613.206 2.999.618 4.157.412 1.159 1.03 2.102 1.854 2.829.847.727 1.912 1.26 3.194 1.601 1.282.341 2.792.511 4.532.511ZM0 102.595h8.413V54.548H0v48.047Zm12.2 0h8.173V75.948c0-.59.034-1.09.103-1.5.092-.431.218-.783.378-1.056.183-.272.4-.477.652-.613s.572-.205.962-.205c.366 0 .675.069.927.205.274.136.492.34.652.613.183.273.31.625.378 1.056.091.41.137.91.137 1.5v26.647h8.172V74.823c0-1.499-.137-2.771-.412-3.816-.275-1.068-.687-1.942-1.236-2.624a4.633 4.633 0 0 0-1.991-1.5c-.802-.317-1.752-.476-2.85-.476a7.27 7.27 0 0 0-2.06.272 7.48 7.48 0 0 0-1.683.716 5.43 5.43 0 0 0-2.129 2.18v-2.487h-8.172v35.507Zm33.69 0h3.81v-6.1h-1.167c-.572 0-1.03-.034-1.373-.102-.32-.068-.572-.182-.755-.34-.184-.182-.298-.432-.344-.75a9.992 9.992 0 0 1-.069-1.295v-20.82h3.709v-6.1h-3.709V57.24H37.82v9.848h-2.85v6.1h2.85v22.047c0 1.476.115 2.692.344 3.646.229.954.64 1.703 1.236 2.249.618.545 1.442.931 2.472 1.158 1.053.205 2.392.307 4.017.307Zm16.715.818c1.762 0 3.284-.205 4.566-.614 1.305-.409 2.37-.999 3.194-1.772a7.03 7.03 0 0 0 1.854-2.896c.412-1.159.618-2.476.618-3.953v-4.804h-8v5.247c0 .455-.046.864-.138 1.227-.091.34-.229.636-.412.886-.183.25-.412.443-.687.58-.252.113-.572.17-.961.17a3.29 3.29 0 0 1-.858-.103 2.513 2.513 0 0 1-.653-.34 1.874 1.874 0 0 1-.446-.58 4.144 4.144 0 0 1-.275-.852 11.018 11.018 0 0 1-.172-1.09 27.193 27.193 0 0 1-.034-1.431V76.186c0-.704.034-1.317.103-1.84.092-.522.218-.954.378-1.295.183-.34.435-.59.755-.75.32-.181.71-.272 1.168-.272.274 0 .515.034.72.102.207.046.39.125.55.239.183.114.332.272.446.477.138.204.24.454.31.75.068.272.125.602.171.988.046.386.069.818.069 1.295v5.724h-5.837v5.18h13.975V78.81c0-1.5-.08-2.84-.24-4.02-.138-1.205-.367-2.273-.688-3.204-.32-.931-.743-1.738-1.27-2.42a6.307 6.307 0 0 0-1.957-1.669c-.756-.431-1.648-.75-2.678-.954-1.03-.227-2.21-.34-3.537-.34-1.946 0-3.606.215-4.979.647-1.35.431-2.46 1.101-3.33 2.01-.87.909-1.5 2.067-1.89 3.476-.388 1.386-.583 3.055-.583 5.009V92.27c0 1.295.08 2.476.24 3.544.16 1.045.413 1.988.756 2.828a8.228 8.228 0 0 0 1.373 2.147 7.16 7.16 0 0 0 2.06 1.465c.802.386 1.717.67 2.747.852 1.053.204 2.244.307 3.572.307Zm13.575-.818h8.172V79.424c0-.932.092-1.693.275-2.284.206-.59.503-1.067.892-1.43.413-.387.928-.648 1.546-.784.64-.16 1.396-.239 2.266-.239h1.03v-7.906h-.446c-.756 0-1.443.137-2.06.41a5.233 5.233 0 0 0-1.649 1.056 6.57 6.57 0 0 0-1.236 1.5 6.677 6.677 0 0 0-.755 1.771v-4.43H76.18v35.507Zm16.699 0h8.172V75.948c0-.59.034-1.09.103-1.5.092-.431.218-.783.378-1.056.183-.272.4-.477.652-.613s.572-.205.962-.205c.366 0 .675.069.927.205.274.136.492.34.652.613.183.273.309.625.378 1.056.091.41.137.91.137 1.5v26.647h8.172V74.823c0-1.499-.137-2.771-.412-3.816-.274-1.068-.687-1.942-1.236-2.624a4.63 4.63 0 0 0-1.991-1.5c-.802-.317-1.752-.476-2.85-.476a7.29 7.29 0 0 0-2.061.272 7.485 7.485 0 0 0-1.682.716 5.443 5.443 0 0 0-1.271.988 5.463 5.463 0 0 0-.858 1.193v-2.488h-8.172v35.507Zm30.288.681c.847 0 1.591-.079 2.231-.238.664-.159 1.237-.375 1.717-.648a5.87 5.87 0 0 0 1.305-1.022c.366-.386.675-.818.927-1.295v.682c0 .204.012.409.035.613.022.205.034.409.034.614l.069.613h8a42.168 42.168 0 0 1-.172-1.602l-.068-1.67a48.235 48.235 0 0 1-.035-1.873V74.413c0-1.544-.183-2.84-.549-3.884-.343-1.045-.916-1.886-1.717-2.522-.801-.659-1.831-1.124-3.09-1.397-1.259-.295-2.793-.443-4.601-.443-1.717 0-3.205.17-4.464.511-1.259.341-2.312.864-3.159 1.568a6.16 6.16 0 0 0-1.889 2.59c-.412 1.044-.618 2.26-.618 3.646v3.782h7.829V74.55c0-.523.057-.954.172-1.295.114-.34.263-.614.446-.818.206-.227.447-.386.721-.477.275-.09.584-.136.927-.136.321 0 .607.034.859.102.252.068.458.182.618.34.183.16.32.364.412.614.091.25.137.557.137.92v3.203c0 .34-.046.625-.137.852-.069.227-.263.454-.584.682-.297.204-.755.443-1.373.715-.595.273-1.431.625-2.507 1.056a122.5 122.5 0 0 0-2.644 1.16 18.45 18.45 0 0 0-2.129 1.055 9.3 9.3 0 0 0-1.579 1.125 6.272 6.272 0 0 0-1.099 1.363 5.819 5.819 0 0 0-.618 1.602 8.93 8.93 0 0 0-.206 2.01v7.19c0 1.295.137 2.42.412 3.373.298.932.732 1.704 1.305 2.317.572.591 1.282 1.034 2.129 1.329.847.296 1.831.443 2.953.443Zm3.571-5.724c-.298 0-.573-.046-.824-.137a1.84 1.84 0 0 1-.619-.409 2.305 2.305 0 0 1-.377-.75c-.092-.317-.138-.703-.138-1.158v-6.917c0-.318.012-.602.035-.852.023-.25.068-.477.137-.681a3.16 3.16 0 0 1 .309-.546 3 3 0 0 1 .447-.477c.183-.136.377-.272.583-.409a8.3 8.3 0 0 1 .79-.408c.252-.16.481-.285.687-.375.206-.091.4-.182.583-.273.184-.09.344-.17.481-.239.138-.068.275-.147.412-.238v10.802c0 .295-.023.59-.068.886a3.643 3.643 0 0 1-.206.75 1.933 1.933 0 0 1-.31.613c-.137.182-.297.33-.48.443a2.441 2.441 0 0 1-.653.272 2.769 2.769 0 0 1-.789.103Zm23.57 5.043h3.812v-6.1h-1.168c-.572 0-1.03-.034-1.373-.102-.321-.068-.573-.182-.756-.34-.183-.182-.297-.432-.343-.75a9.98 9.98 0 0 1-.069-1.295v-20.82h3.709v-6.1h-3.709V57.24h-8.172v9.848h-2.85v6.1h2.85v22.047c0 1.476.115 2.692.343 3.646.229.954.641 1.703 1.237 2.249.618.545 1.442.931 2.472 1.158 1.053.205 2.392.307 4.017.307Zm6.751 0h8.172V67.088h-8.172v35.507Zm22.17.818c1.969 0 3.628-.216 4.979-.648 1.373-.431 2.483-1.101 3.33-2.01.87-.932 1.488-2.09 1.855-3.476.389-1.408.583-3.078.583-5.009V77.379c0-1.931-.194-3.59-.583-4.975-.367-1.408-.985-2.567-1.855-3.476-.847-.931-1.957-1.613-3.33-2.044-1.351-.455-3.01-.682-4.979-.682-1.969 0-3.64.227-5.013.682-1.351.431-2.461 1.113-3.331 2.044-.847.909-1.465 2.068-1.854 3.476-.366 1.386-.549 3.044-.549 4.975V92.27c0 1.931.183 3.6.549 5.01.389 1.385 1.007 2.543 1.854 3.475.87.909 1.98 1.579 3.331 2.01 1.373.432 3.044.648 5.013.648Zm0-6.032c-.481 0-.87-.09-1.168-.272-.297-.182-.537-.455-.721-.818-.16-.364-.274-.83-.343-1.397a25.839 25.839 0 0 1-.069-2.045V76.8c0-.794.023-1.476.069-2.044.069-.568.183-1.033.343-1.397.184-.386.424-.659.721-.818.298-.181.687-.272 1.168-.272.481 0 .858.09 1.133.272.298.16.527.432.687.818.183.364.297.83.343 1.397.069.568.103 1.25.103 2.045v16.05c0 .794-.034 1.476-.103 2.044-.046.568-.16 1.033-.343 1.397-.16.363-.389.636-.687.818-.275.181-.652.272-1.133.272Zm13.978 5.214h8.172V75.948c0-.59.034-1.09.103-1.5.091-.431.217-.783.378-1.056.183-.272.4-.477.652-.613s.572-.205.961-.205c.367 0 .676.069.927.205.275.136.493.34.653.613.183.273.309.625.378 1.056.091.41.137.91.137 1.5v26.647h8.172V74.823c0-1.499-.137-2.771-.412-3.816-.275-1.068-.687-1.942-1.236-2.624a4.632 4.632 0 0 0-1.992-1.5c-.801-.317-1.751-.476-2.85-.476a7.28 7.28 0 0 0-2.06.272 7.466 7.466 0 0 0-1.682.716 5.443 5.443 0 0 0-1.271.988 5.463 5.463 0 0 0-.858 1.193v-2.488h-8.172v35.507Zm30.287.681c.847 0 1.591-.079 2.232-.238.664-.159 1.236-.375 1.717-.648a5.87 5.87 0 0 0 1.305-1.022c.366-.386.675-.818.927-1.295v.682c0 .204.011.409.034.613.023.205.035.409.035.614l.068.613h8.001a42.168 42.168 0 0 1-.172-1.602 481.71 481.71 0 0 1-.068-1.67 48.235 48.235 0 0 1-.035-1.873V74.413c0-1.544-.183-2.84-.549-3.884-.344-1.045-.916-1.886-1.717-2.522-.801-.659-1.831-1.124-3.09-1.397-1.259-.295-2.793-.443-4.602-.443-1.716 0-3.204.17-4.463.511-1.259.341-2.312.864-3.159 1.568a6.16 6.16 0 0 0-1.889 2.59c-.412 1.044-.618 2.26-.618 3.646v3.782h7.829V74.55c0-.523.057-.954.172-1.295.114-.34.263-.614.446-.818a1.67 1.67 0 0 1 .721-.477c.275-.09.584-.136.927-.136.321 0 .607.034.859.102.251.068.457.182.618.34.183.16.32.364.412.614.091.25.137.557.137.92v3.203c0 .34-.046.625-.137.852-.069.227-.264.454-.584.682-.298.204-.755.443-1.374.715-.595.273-1.43.625-2.506 1.056-.962.41-1.843.796-2.644 1.16a18.45 18.45 0 0 0-2.129 1.055 9.26 9.26 0 0 0-1.579 1.125 6.243 6.243 0 0 0-1.099 1.363 5.819 5.819 0 0 0-.618 1.602 8.873 8.873 0 0 0-.206 2.01v7.19c0 1.295.137 2.42.412 3.373.297.932.732 1.704 1.305 2.317.572.591 1.281 1.034 2.128 1.329.847.296 1.832.443 2.953.443Zm3.571-5.724a2.41 2.41 0 0 1-.824-.137 1.826 1.826 0 0 1-.618-.409 2.305 2.305 0 0 1-.377-.75c-.092-.317-.138-.703-.138-1.158v-6.917c0-.318.012-.602.035-.852.022-.25.068-.477.137-.681.091-.205.195-.387.309-.546.137-.181.286-.34.446-.477.183-.136.378-.272.584-.409a8.3 8.3 0 0 1 .79-.408c.252-.16.481-.285.687-.375.206-.091.4-.182.583-.273l.481-.239c.137-.068.275-.147.412-.238v10.802c0 .295-.023.59-.069.886a3.521 3.521 0 0 1-.206.75 1.91 1.91 0 0 1-.309.613c-.137.182-.297.33-.48.443a2.455 2.455 0 0 1-.653.272 2.771 2.771 0 0 1-.79.103Zm14.16 5.043h8.172V54.548h-8.172v48.047Z"></path><rect x="156.589" y="57.448" width="9.07" height="8.133" rx="4.067" fill="#121c42"></rect></svg></span>
+                            </div>
+                            <div class="logo">
+                                <img class="img-fluid" src="assets/iscm_logo.png">
+                            </div>
+                        
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8 px-sm-5">
+                        <h3>Authors and Contributors</h3>
+                        <p>This article was produced in collaboration between <a href="https://www.refugeesinternational.org/">Refugees International</a> and students in the 2024 <a href="https://earthrefuge.org/international-school-on-climate-mobilities/" target="_blank">International School on Climate Mobilities</a>.</p>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4 px-sm-5">
+                        <p>Jisu Kim, <small>research, writing, and original media</small></p>
+                        <p>Dr. Shubhi Misra, <small> research, writing, and original media</small></p>
+                        <p>Dr. Lucy Mandillah, <small> research, writing, and original media</small></p>
+                        <p>Mayuresh Bhadsavle, <small> research, writing, and original media</small></p>
+                        <p>James P. Collins, <small> research, editing, and design</small></p>
+                    </div>
+                    <div class="col-lg-4 px-sm-5">
+                        <p>Noor Al-Ibadi, <small> conceptualization and research</small></p>
+                        <p>Syed Raza, <small> conceptualization and research</small></p>
+                        <p>Shahzad Ahmed Malik, <small> conceptualization</small></p>
+                        <p>Gabriela Nagle Alverio, <small> project direction and management</small></p>
+                        <p>Chlo&eacute; ten Brink, <small> project direction and management</small></p>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8 px-sm-5">
+                        <small class="text-secondary">Article text &copy; 2024 the authors. Media courtesy Pexels.com contributors except where noted.</small>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/noframework.waypoints.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>    
+
+    <script>
+        var fadeSpeed = 500;
+
+        var wpS1 = new Waypoint({
+            element: document.getElementById('section-1'),
+            offset: -window.innerHeight/2,
+            handler: (d) => {
+                // console.log('s1 '+d)
+                resetSlides();
+                if (d == 'down') {
+                    $('#slide-2').stop().fadeIn(fadeSpeed);
+                }
+                if (d == 'up') {
+                    $('#slide-1').stop().fadeIn(fadeSpeed);
+                }
+            }
+        });
+
+        var wpS2 = new Waypoint({
+            element: document.getElementById('section-2'),
+            offset: window.innerHeight/2,
+            handler: (d) => {
+                // console.log('s2 '+d)
+                resetSlides();
+                $('#slide-2').stop().fadeIn(fadeSpeed);
+
+            }
+        });
+
+        var wpS3 = new Waypoint({
+            element: document.getElementById('section-3'),
+            offset: window.innerHeight/2,
+            handler: (d) => {
+                // console.log('s3 '+d)
+                resetSlides();
+                if (d == 'down') {
+                    $('#slide-3').stop().fadeIn(fadeSpeed);
+                }
+                if (d == 'up') {
+                    $('#slide-2').stop().fadeIn(fadeSpeed);
+                }
+            }
+        });
+
+        var wpS4 = new Waypoint({
+            element: document.getElementById('section-4'),
+            offset: window.innerHeight*0.8,
+            handler: (d) => {
+                // console.log('s4 '+d)
+                resetSlides();
+                if (d == 'down') {
+                    $('#slide-4').stop().fadeIn(fadeSpeed);
+                }
+                if (d == 'up') {
+                    $('#slide-3').stop().fadeIn(fadeSpeed);
+                }
+            }
+        });
+
+        function resetSlides () {
+            // $('video').trigger('pause');
+            $('.slide').stop().fadeOut(fadeSpeed);
+        }
+
+        function updateGlobe(d) {
+            console.log(d)
+        }
+
+        $(() => {
+            window.scrollTo(0, 0);
+            $('#slide-1').show();
+        });
+    </script>
+
+    <script src="assets/koshi_flooding_breach.js"></script>
+    <script src="assets/koshi_flooding_floodzone.js"></script>
+    <script src="assets/koshi_flooding_floodzone_partial.js"></script>
+    <script src="assets/koshi_flooding_camps.js"></script>
+    <script>
+        var map = L.map('map',{ 
+            zoomControl: false, 
+            attributionControl: true,
+            minZoom: 11,
+            maxZoom: 14,
+            maxBounds: [[26.554+.2, 87.028+.2],[26.554-.2, 87.028-.2]],
+            maxBoundsViscosity: 1.0
+        }).setView([26.55474871494273, 87.02842660462776], 11);
+        // map.dragging.disable();
+        // map.scrollWheelZoom.disable();
+
+        var Esri_WorldTopoMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+            // attribution: 'Tiles &copy; Esri'
+        });
+        Esri_WorldTopoMap.addTo(map);
+
+        var miniMap = new L.Control.GlobeMiniMap({     
+            land:'#6fd8b3',
+            water:'#d1eef9',
+            marker:'#ff633e',
+            topojsonSrc: 'js/world.json'
+        }).addTo(map);
+
+        new L.GeoJSON(koshi_floodzone_partial,{
+            color: 'lightblue',
+            fillColor: 'lightblue',
+            fillOpacity: 0.3,
+            opacity: 0.6,
+            onEachFeature: (f,l) => {
+                l.bindTooltip("Displacement areas,<br>some flooding",{
+                    permanent: true,
+                    direction: 'bottom'
+                });
+            }
+        }).addTo(map);
+
+        new L.GeoJSON(koshi_floodzone,{
+            attribution: '<a href="https://www.unocha.org/publications/map/nepal/koshi-river-flood-nepal-affected-areas-sunsari-and-saptari-districts-22-aug-2008" target="_blank">UN OCHA</a>',
+            color: 'blue',
+            fillColor: 'blue',
+            fillOpacity: 0.3,
+            opacity: 0.6,
+            onEachFeature: (f,l) => {
+                l.bindTooltip("Completely flooded",{
+                    permanent: true,
+                    direction: 'left'
+                });
+            }
+        }).addTo(map);
+
+        new L.GeoJSON(koshi_breach,{
+            pointToLayer: function (f, ll) {
+                return L.circleMarker(ll, {
+                    color: 'red',
+                    fillColor: 'red',
+                    fillOpacity: 1,
+                    opacity: 1,
+                    radius: 10
+                });
+            },
+            onEachFeature: (f,l) => {
+                l.bindTooltip("Embankment breach",{
+                    permanent: true,
+                    direction: 'top'
+                });
+            }
+        }).addTo(map);
+
+        firstCamp = true;
+        new L.GeoJSON(koshi_camps,{
+            color: 'grey',
+            fillColor: 'grey',
+            fillOpacity: 0.3,
+            opacity: 0.6,
+            onEachFeature: (f,l) => {
+                if (firstCamp) {
+                    l.bindTooltip("Shelter camps",{
+                        permanent: true,
+                        direction: 'top'
+                    });
+                    firstCamp = false;
+                }
+            }
+        }).addTo(map);
+
+    </script>
+
+
+</body>
+</html>
